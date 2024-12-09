@@ -113,7 +113,7 @@ function formatTime(time) {
 function changeLink() {
   let currentTime = new Date();
   let hour = currentTime.getHours();
-  let time = date.getTime();
+  const time = date.getTime();
 
   if (day === 0 && hour >= 00 && hour < 02) {
     href = 'https://www.youtube.com/@hillsong';
