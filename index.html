@@ -112,10 +112,11 @@ function formatTime(time) {
 
 function changeLink() {
   let currentTime = new Date();
+  let date = new Date();
   let hour = currentTime.getHours();
   const time = date.getTime();
 
-  if (day === 0 && hour >= 00 && hour < 02) {
+  if (day === 0 && hour >= 0 && hour < 2) {
     href = 'https://www.youtube.com/@hillsong';
   } 
   else if (day === 0 && hour >= 2 && hour < 3) {
@@ -166,7 +167,7 @@ function changeLink() {
   else if (day === 1 && hour >= 15 && hour < 16) {
     href = 'https://www.clubhouse.com/house/hethatreadethportal-htr';
   }
-  else if (day === 1 && time >= date.setHours(18, 25, 00) && time <= date.setHours( 19, 00, 00) ){
+  else if (day === 1 && time >= date.setHours(18, 25, 0) && time <= date.setHours( 19, 30, 0) ){
     href = 'https://www.bible.com/';
   }
   else if (day === 1 && hour >= 20 && hour < 21) {
