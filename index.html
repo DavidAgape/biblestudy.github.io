@@ -119,28 +119,34 @@ function changeLink() {
   if (day === 0 && hour >= 0 && hour < 2) {
     href = 'https://www.youtube.com/@hillsong';
   } 
-  else if (day === 0 && hour >= 2 && hour < 3) {
-    href = 'https://www.clubhouse.com/house/lift-church-global';
-  } 
-  else if (day === 0 && hour >= 3 && hour < 5) {
+  else if (day === 0 && time >= date.setHours(2, 00, 0) && time <= date.setHours( 2, 50, 0) ){
+    href = 'https://m.youtube.com/watch?v=L8_Y05F4bVU';
+  }
+  else if (day === 0 && time >= date.setHours(2, 50, 0) && time <= date.setHours( 4, 50, 0) ){
     href = 'https://www.youtube.com/HillsongTokyo/live';
-  } 
+  }
+  else if (day === 0 && time >= date.setHours(5, 00, 0) && time <= date.setHours( 5, 30, 0) ){
+    href = 'https://m.youtube.com/@PastorJasonLim/streams';
+  }
+  else if (day === 0 && time >= date.setHours(5, 30, 0) && time <= date.setHours( 7, 30, 0) ){
+    href = 'https://www.youtube.com/@HillsongIndonesia';
+  }
   else if (day === 0 && hour >= 5 && hour < 6) {
     href = 'https://m.youtube.com/@PastorJasonLim/streams';
   } 
-  else if (day === 0 && hour >= 6 && hour < 8) {
+  else if (day === 0 && time >= date.setHours(6, 0, 0) && time <= date.setHours( 7, 30, 0) ){
     href = 'https://m.youtube.com/watch?v=L8_Y05F4bVU';
-  } 
-  else if (day === 0 && hour >= 8 && hour < 10) {
+  }
+  else if (day === 0 && time >= date.setHours(8, 0, 0) && time <= date.setHours( 9, 30, 0) ){
     href = 'https://www.youtube.com/@hillsong';
-  } 
-  else if (day === 0 && hour >= 10 && hour < 12) {
+  }
+  else if (day === 0 && time >= date.setHours(9, 30, 0) && time <= date.setHours( 11, 30, 0) ){
     href = 'https://m.youtube.com/@HillsongUkraine/featured';
   }
   else if (day === 0 && hour >= 12 && hour < 14) {
     href = 'https://m.youtube.com/watch?v=L8_Y05F4bVU';
   }
-  else if (day === 0 && hour >= 15 && hour < 17) {
+  else if (day === 0 && time >= date.setHours(14, 30, 0) && time <= date.setHours( 16, 30, 0) ){
     href = 'https://m.youtube.com/@lakewoodchurch';
   }
   else if (day === 0 && hour >= 17 && hour < 22) {
@@ -158,17 +164,17 @@ function changeLink() {
   else if (day === 1 && hour >= 10 && hour < 11) {
     href = 'https://www.clubhouse.com/house/1-chapter-in-1-hour-podcast';
   }
-  else if (day === 1 && hour >= 12 && hour < 13) {
+  else if (day === 1 && time >= date.setHours(12, 00, 0) && time <= date.setHours( 12, 30, 0) ){
     href = 'https://m.youtube.com/@jasiriouslyspeakingproductions';
   }
-  else if (day === 1 && hour >= 13 && hour < 15) {
+  else if (day === 1 && time >= date.setHours(12, 30, 0) && time <= date.setHours( 14, 30, 0) ){
+    href = 'https://www.clubhouse.com/house/24-hour-bible-study';
+  }
+  else if (day === 1 && time >= date.setHours(14, 30, 0) && time <= date.setHours( 15, 00, 0) ){
     href = 'https://m.youtube.com/@LaLaJenkins';
   }
   else if (day === 1 && hour >= 15 && hour < 16) {
     href = 'https://www.clubhouse.com/house/hethatreadethportal-htr';
-  }
-  else if (day === 1 && time >= date.setHours(18, 25, 0) && time <= date.setHours( 19, 30, 0) ){
-    href = 'https://www.bible.com/';
   }
   else if (day === 1 && hour >= 20 && hour < 21) {
     href = 'https://www.clubhouse.com/house/hethatreadethportal-htr';
@@ -188,22 +194,28 @@ function changeLink() {
   else if (day === 2 && hour >= 10 && hour < 11) {
     href = 'https://www.clubhouse.com/house/1-chapter-in-1-hour-podcast';
   }
-  else if (day === 2 && hour >= 12 && hour < 13) {
+  else if (day === 2 && time >= date.setHours(12, 00, 0) && time <= date.setHours( 12, 30, 0) ){
     href = 'https://m.youtube.com/@jasiriouslyspeakingproductions';
   }
-  else if (day === 2 && hour >= 13 && hour < 15) {
+  else if (day === 2 && time >= date.setHours(12, 30, 0) && time <= date.setHours( 14, 30, 0) ){
     href = 'https://www.clubhouse.com/house/24-hour-bible-study';
   }
   else if (day === 2 && hour >= 15 && hour < 16) {
     href = 'https://www.clubhouse.com/house/hethatreadethportal-htr';
   }
-  else if (day === 2 && hour >= 19 && hour < 20) {
+  else if (day === 2 && time >= date.setHours(18, 30, 0) && time <= date.setHours( 20, 00, 0) ){
     href = 'https://m.youtube.com/@RCCGMercylandParish/featured';
   }
   else if (day === 2 && hour >= 20 && hour < 21) {
+    href = 'https://www.clubhouse.com/house/hethatreadethportal-htr';
+  }
+  else if (day === 2 && hour >= 21 && hour < 22) {
     href = 'https://www.clubhouse.com/house/daily-bible-read-out';
   }
   else if (day === 3 && hour >= 1 && hour < 3) {
+    href = 'https://thebelongingco.online.church/';
+  }
+  else if (day === 3 && time >= date.setHours(1, 30, 0) && time <= date.setHours( 2, 30, 0) ){
     href = 'https://thebelongingco.online.church/';
   }
   else if (day === 3 && hour >= 6 && hour < 7) {
@@ -215,10 +227,10 @@ function changeLink() {
   else if (day === 3 && hour >= 10 && hour < 11) {
     href = 'https://www.clubhouse.com/house/1-chapter-in-1-hour-podcast';
   }
-  else if (day === 3 && hour >= 12 && hour < 13) {
+  else if (day === 3 && time >= date.setHours(12, 00, 0) && time <= date.setHours( 12, 30, 0) ){
     href = 'https://m.youtube.com/@jasiriouslyspeakingproductions';
   }
-  else if (day === 3 && hour >= 13 && hour < 15) {
+  else if (day === 3 && time >= date.setHours(12, 30, 0) && time <= date.setHours( 15, 30, 0) ){
     href = 'https://www.clubhouse.com/house/24-hour-bible-study';
   }
   else if (day === 3 && hour >= 15 && hour < 16) {
@@ -226,6 +238,9 @@ function changeLink() {
   }
   else if (day === 3 && hour >= 19 && hour < 20) {
     href = 'https://www.facebook.com/thecharisyouths/';
+  }
+  else if (day === 3 && time >= date.setHours(18, 30, 0) && time <= date.setHours( 20, 00, 0) ){
+    href = 'https://m.facebook.com/profile.php/?id=100067943473912&name=xhp_nt__fb__action__open_user';
   }
   else if (day === 3 && hour >= 20 && hour < 21) {
     href = 'https://www.clubhouse.com/house/hethatreadethportal-htr';
@@ -245,16 +260,19 @@ function changeLink() {
   else if (day === 4 && hour >= 10 && hour < 11) {
     href = 'https://www.clubhouse.com/house/1-chapter-in-1-hour-podcast';
   }
-  else if (day === 4 && hour >= 12 && hour < 13) {
+  else if (day === 4 && time >= date.setHours(12, 00, 0) && time <= date.setHours( 12, 30, 0) ){
     href = 'https://m.youtube.com/@jasiriouslyspeakingproductions';
   }
-  else if (day === 4 && hour >= 13 && hour < 15) {
+  else if (day === 4 && time >= date.setHours(12, 30, 0) && time <= date.setHours( 14, 30, 0) ){
     href = 'https://www.clubhouse.com/house/24-hour-bible-study';
   }
   else if (day === 4 && hour >= 15 && hour < 16) {
     href = 'https://www.clubhouse.com/house/hethatreadethportal-htr';
   }
-  else if (day === 4 && hour >= 19 && hour < 21) {
+  else if (day === 4 && time >= date.setHours(12, 30, 0) && time <= date.setHours( 14, 30, 0) ){
+    href = 'https://www.clubhouse.com/house/24-hour-bible-study';
+  }
+  else if (day === 4 && time >= date.setHours(19, 30, 0) && time <= date.setHours( 21, 00, 0) ){
     href = 'https://www.clubhouse.com/house/oaks-ekklesia-assembly';
   }
   else if (day === 4 && hour >= 21 && hour < 22) {
@@ -272,10 +290,10 @@ function changeLink() {
   else if (day === 5 && hour >= 10 && hour < 11) {
     href = 'https://www.clubhouse.com/house/1-chapter-in-1-hour-podcast';
   }
-  else if (day === 5 && hour >= 12 && hour < 13) {
+  else if (day === 5 && time >= date.setHours(12, 00, 0) && time <= date.setHours( 12, 30, 0) ){
     href = 'https://m.youtube.com/@jasiriouslyspeakingproductions';
   }
-  else if (day === 5 && hour >= 13 && hour < 15) {
+  else if (day === 5 && time >= date.setHours(12, 30, 0) && time <= date.setHours( 14, 30, 0) ){
     href = 'https://www.clubhouse.com/house/24-hour-bible-study';
   }
   else if (day === 5 && hour >= 15 && hour < 16) {
@@ -284,7 +302,7 @@ function changeLink() {
   else if (day === 5 && hour >= 20 && hour < 21) {
     href = 'https://www.clubhouse.com/house/hethatreadethportal-htr';
   }
-  else if (day === 5 && hour >= 22 && hour < 23) {
+  else if (day === 5 && hour >= 21 && hour < 22) {
     href = 'https://www.clubhouse.com/house/daily-bible-read-out';
   }
   else if (day === 6 && hour >= 2 && hour < 3) {
@@ -293,10 +311,10 @@ function changeLink() {
   else if (day === 6 && hour >= 8 && hour < 11) {
     href = 'https://www.clubhouse.com/house/olive-tree-praise';
   }
-  else if (day === 6 && hour >= 12 && hour < 13) {
+  else if (day === 5 && time >= date.setHours(12, 00, 0) && time <= date.setHours( 12, 30, 0) ){
     href = 'https://m.youtube.com/@jasiriouslyspeakingproductions';
   }
-  else if (day === 6 && hour >= 13 && hour < 15) {
+  else if (day === 5 && time >= date.setHours(12, 30, 0) && time <= date.setHours( 14, 30, 0) ){
     href = 'https://www.clubhouse.com/house/24-hour-bible-study';
   }
   else if (day === 6 && hour >= 20 && hour < 21) {
