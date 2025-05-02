@@ -62,6 +62,7 @@ button {
   <div class="hero">
     <div class="container">
       <div class="clock">
+        <span id="Week">Week</span>
         <span id="weekElement">1</span>
         <span id="dayElement">Monday</span>
         <span id="hr">00</span>
@@ -325,7 +326,7 @@ function changeLink() {
   else if (day === 5 && hour >= 15 && hour < 16) {
     href = 'https://www.clubhouse.com/house/hethatreadethportal-htr';
   }
-  else if(week = 1 && day === 5 && hour >= 18 && hour < 20) {
+  else if (week === 1 && day === 5 && hour >= 18 && hour < 20) {
     href = 'https://www.youtube.com/@rccglive';
   }
   else if (day === 5 && hour >= 20 && hour < 21) {
@@ -333,6 +334,9 @@ function changeLink() {
   }
   else if (day === 5 && hour >= 21 && hour < 22) {
     href = 'https://www.clubhouse.com/house/daily-bible-read-out';
+  }
+  else if (week === 1 && day === 5 && time >= date.setHours(22, 0, 0) && time <= date.setHours(23, 59, 0) ){
+    href = 'https://www.youtube.com/@rccglive';
   }
   else if (day === 6 && hour >= 2 && hour < 3) {
     href = 'https://www.clubhouse.com/house/lift-church-global';
