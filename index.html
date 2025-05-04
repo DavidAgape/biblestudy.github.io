@@ -39,13 +39,6 @@ button {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
 }
 
-.gotolink{
-  display: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .container {
   text-align: center;
 }
@@ -57,13 +50,11 @@ button {
     
 </style>
 <body>
-  <button type= "button" onclick="changeLink()" class="gotolink">Go To Link</button>
+  <button type= "button" onclick="changeLink()">Go To Link</button>
 
   <div class="hero">
     <div class="container">
       <div class="clock">
-        <span id="Week">Week</span>
-        <span id="weekElement">1</span>
         <span id="dayElement">Monday</span>
         <span id="hr">00</span>
         <span>:</span>
@@ -77,14 +68,12 @@ button {
 
    <script>
        let href = 'https://google.com';
-let weekElement = document.getElementById('weekElement');
-let dayElement = document.getElementById('dayElement');
+let dayElement = document.getElementById('dayElement')
 let hr = document.getElementById('hr');
 let min = document.getElementById('min');
 let sec = document.getElementById("sec");
 
 let day;
-let week;
 
 setInterval(() => {
   let currentTime = new Date();
@@ -93,7 +82,6 @@ setInterval(() => {
   min.innerHTML = formatTime(currentTime.getMinutes());
   sec.innerHTML = formatTime(currentTime.getSeconds());
   day = currentTime.getDay();
-  week = currentTime.getWeek();
 
   switch (day) {
     case 0:
@@ -117,19 +105,6 @@ setInterval(() => {
     case 6:
       dayElement.innerHTML = "Saturday";
       break;
-  }
-
-  switch(week){
-    case 0:
-      weekElement.innerHTML = "1";
-    case 1:
-      weekElement.innerHTML = "2";
-    case 2:
-      weekElement.innerHTML = "3";
-    case 3:
-      weekElement.innerHTML = "4";
-
-      console.log("done");
   }
 }, 1000);
 
@@ -326,17 +301,11 @@ function changeLink() {
   else if (day === 5 && hour >= 15 && hour < 16) {
     href = 'https://www.clubhouse.com/house/hethatreadethportal-htr';
   }
-  else if (week === 1 && day === 5 && hour >= 18 && hour < 20) {
-    href = 'https://www.youtube.com/@rccglive';
-  }
   else if (day === 5 && hour >= 20 && hour < 21) {
     href = 'https://www.clubhouse.com/house/hethatreadethportal-htr';
   }
   else if (day === 5 && hour >= 21 && hour < 22) {
     href = 'https://www.clubhouse.com/house/daily-bible-read-out';
-  }
-  else if (week === 1 && day === 5 && time >= date.setHours(22, 0, 0) && time <= date.setHours(23, 59, 0) ){
-    href = 'https://www.youtube.com/@rccglive';
   }
   else if (day === 6 && hour >= 2 && hour < 3) {
     href = 'https://www.clubhouse.com/house/lift-church-global';
